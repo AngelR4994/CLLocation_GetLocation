@@ -14,6 +14,7 @@
 		4BC1DAB31D7228E00022EAD8 /* CoreLocationFramework.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4BC1DAB11D7228E00022EAD8 /* CoreLocationFramework.xcdatamodeld */; };
 		4BC1DAB51D7228E00022EAD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BC1DAB41D7228E00022EAD8 /* Assets.xcassets */; };
 		4BC1DAB81D7228E00022EAD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BC1DAB61D7228E00022EAD8 /* LaunchScreen.storyboard */; };
+		4BC1DAC21D7234A40022EAD8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BC1DAC11D7234A30022EAD8 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		4BC1DAB41D7228E00022EAD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4BC1DAB71D7228E00022EAD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4BC1DAB91D7228E00022EAD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BC1DAC11D7234A30022EAD8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BC1DAC21D7234A40022EAD8 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +47,7 @@
 		4BC1DA991D7228E00022EAD8 = {
 			isa = PBXGroup;
 			children = (
+				4BC1DAC11D7234A30022EAD8 /* CoreLocation.framework */,
 				4BC1DAA41D7228E00022EAD8 /* CoreLocationFramework */,
 				4BC1DAA31D7228E00022EAD8 /* Products */,
 			);
@@ -60,10 +64,8 @@
 		4BC1DAA41D7228E00022EAD8 /* CoreLocationFramework */ = {
 			isa = PBXGroup;
 			children = (
-				4BC1DAA81D7228E00022EAD8 /* AppDelegate.h */,
-				4BC1DAA91D7228E00022EAD8 /* AppDelegate.m */,
-				4BC1DAAB1D7228E00022EAD8 /* ViewController.h */,
-				4BC1DAAC1D7228E00022EAD8 /* ViewController.m */,
+				4BC1DAC01D7229210022EAD8 /* Controllers */,
+				4BC1DABF1D7229160022EAD8 /* Main */,
 				4BC1DAAE1D7228E00022EAD8 /* Main.storyboard */,
 				4BC1DAB41D7228E00022EAD8 /* Assets.xcassets */,
 				4BC1DAB61D7228E00022EAD8 /* LaunchScreen.storyboard */,
@@ -80,6 +82,24 @@
 				4BC1DAA61D7228E00022EAD8 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4BC1DABF1D7229160022EAD8 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4BC1DAA81D7228E00022EAD8 /* AppDelegate.h */,
+				4BC1DAA91D7228E00022EAD8 /* AppDelegate.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		4BC1DAC01D7229210022EAD8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4BC1DAAB1D7228E00022EAD8 /* ViewController.h */,
+				4BC1DAAC1D7228E00022EAD8 /* ViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
